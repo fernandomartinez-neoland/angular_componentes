@@ -1,1 +1,12 @@
-<p>app works!</p>
+<h1>{{ switch() }}</h1>
+@if (switch()) {
+<p>Switch is true</p>
+} @else {
+<p>Switch is false</p>
+}
+
+<h1>{{ arreglo() }}</h1>
+@for(item of arreglo(); track $index){
+<li>{{ item }}</li>
+<li>{{ $index }}</li>
+}

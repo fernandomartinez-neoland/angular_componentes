@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,6 +6,13 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
-export class AppComponent {
+export default class AppComponent {
+  arreglo = signal([
+    'pepito',
+    'fulanito',
+    'manolito',
+    'fulano'
+  ])
+  switch = signal(true);
 
 }
