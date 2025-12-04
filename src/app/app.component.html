@@ -5,8 +5,14 @@
 <p>Switch is false</p>
 }
 
+<h1>Padre: {{ servicioSwitcher() }}</h1>
 <h1>{{ arreglo() }}</h1>
 @for(item of arreglo(); track $index){
 <li>{{ item }}</li>
 <li>{{ $index }}</li>
 }
+
+<button (click)="saludar()">Saludar</button>
+<button (click)="imprimir()">Imprimir</button>
+
+<app-hijo [boolHijo]="switcher"></app-hijo>
